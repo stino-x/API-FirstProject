@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/51ef778fad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="container" type="submit">
+            <div class="body">
+                <div class="section">
+                    <span class="td"> <span>Today's to Do</span> <box-icon class="refresh" name="refresh" id="refresh"></box-icon></span>
+                </div>
+                
+                <form class="section input-area ">
+                    <span><input type="text" id="input" placeholder="Add to your list..." required><box-icon name="subdirectory-left" id="enter"></box-icon></span>
+                </form>
+                
+                <ul id="activity-list">
+                    <!-- <li class="section listitem">
+                        <span class="activity td"><input type="checkbox" name="" class="check-box"><span class="text">wash the dishes</span><i class="fa-solid fa-ellipsis-vertical edit"></i></span>
+                    </li>
+                    <li class="section listitem">
+                        <span class="activity td"><input type="checkbox" name="" class="check-box"><span class="text">complete To Do list project</span> <i class="fa-solid fa-ellipsis-vertical edit" ></i></span>
+                    </li>
+                    <li class="section edit">
+                        <span class="activity">
+                        <input type="checkbox" name="" class="check-box check-box-edit">
+                        <input type="text" class="input-edit" placeholder="Add to your list...">
+                        
+                            <box-icon name="trash-alt" type="solid" class="trash"></box-icon>
+                        
+                        </span>
+                    </li> -->
+                </ul>
+                <button type="button" class=".clear-all" value="Clear all completed">
+                    Clear all completed
+                </button>
+            </div>
+        </div>
+        <script type="module" src="./Modules/script.js" refer></script>
+</body>
+</html>
