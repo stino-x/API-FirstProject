@@ -1,3 +1,4 @@
+import './style.css';
 import Updateposition from './Modules/input.js';
 
 const refreshButton = document.querySelector('.refresh');
