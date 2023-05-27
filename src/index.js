@@ -54,11 +54,13 @@ const submitScore = (e) => {
   Form.reset();
 };
 const displayScore = async () => {
-  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/austin/scores/')
-    .then((response) => response.json())
-    .then((data) => {
-      newCompetitor(data.result);
-    });
+  try {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/austin/scores/');
+    const data = await response.json();
+    newCompetitor(data.result);
+  } catch (error) {
+    displayError(error);
+  }
 };
 
 submitButton.addEventListener('click', submitScore);
