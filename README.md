@@ -4,9 +4,10 @@
 
 <div align="center">
 
-<img src="src/logo dark (1).PNG" alt="logo" width="140"  height="auto" />
+  <img src="src/modules/logo tr.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-<h3><b>To do List Website</b></h3>
+  <h3><b>Leaderboard</b></h3>
 
 </div>
 
@@ -35,17 +36,17 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To do Website <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
 
-To do List Website is a project that allows a user to add to do tasks, display the tasks and remove them. I created the project using HTML and CSS and Javascript.
+Leaderboard application is an application that allows a user to enter a score and displays it. I created the project using HTML, CSS and Javascript.
 
 ## 🛠 Built With <a name="built-with"></a>
 1- HTML.
 
 2- CSS.
 
-3- Javascript
+3- Javascript.
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -64,20 +65,22 @@ To do List Website is a project that allows a user to add to do tasks, display t
 
 ### Key Features <a name="key-features"></a>
 
-- Added HTML file.
-- Added style.css file.
-- Added list container.
-- Added clear button.
-- Added input section
-- Added a list to display the to do lists
-- Added styling to the page.
-- Added to do array in javascript
-- Rendered the to do items dynamically.
-
+- Added input form for scores.
+- Added display section for scores.
+- Added header.
+- Added styling.
+- Added responsiveness.
+- Fetch scores from API.
+- Post scores to the API
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Coming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +109,7 @@ Clone this repository to your desired folder:
 Run this command:
 
 ```sh
-git clone git@github.com:stino-x/check-list.git
+git clone git@github.com:stino-x/API-FirstProject.git
 ```
 
 
@@ -117,9 +120,8 @@ Install this project with:
 Run this command:
 
 ```sh
-  cd my-project
+  cd leaderboard
   npm install
-  npm run build
 ```
 
 
@@ -129,17 +131,20 @@ To run the project, execute the following command:
 ```sh
 npm start
 ```
-
+or 
+```sh
+npm run start
+```
 
 ### Run tests
 
-> Coming soon
+> Coming soon...
 
 
 
 ### Deployment
 
-
+> Coming soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,11 +152,9 @@ npm start
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Sylvester WAMAYA
+👤 stino-x
 
-- GitHub: [@githubhandle](https://github.com/sylvester-wamaya)
-
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/iheagwara-Augustine/)
+- GitHub: [@githubhandle](https://github.com/stino-x)
 
 
 
@@ -161,10 +164,9 @@ npm start
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add add to to item functionality.
-- [ ] Add remove to do item functionality.
-- [ ] Add Edit functionality.
-- [ ] Add Clear all functionality.
+
+- [ ] Add more styling.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
