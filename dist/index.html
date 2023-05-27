@@ -11,6 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 <body>
+    <h1>Leaderboard</h1>
+    <section class="flex">
+     <div class="left">
+         <div class="recent-scores">
+             <h3>Recent scores</h3>
+         <button type="submit" class="refresh" value="Refresh">Refresh</button>
+         </div>
+         <div class="list-container">
+             <ul id="scores">
+                <li>name: score</li>
+             </ul>
+         </div>
+     </div>
+     <div class="right">
+         <div class="container-2">
+             <h3>Add your score</h3>
+         <form action="submit">
+             <input type="text" name="name" id="name" placeholder="Your name" required>
+             <input type="number" name="score" id="score" placeholder="Your score" required>
+             <input type="button" id="submit" value="Submit">
+         </form>
+         </div>
+     </div>
+    </section>
    <script type="module" src="script.js" refer></script>
 </body>
 </html>
