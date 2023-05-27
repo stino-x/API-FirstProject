@@ -26,31 +26,25 @@ const newCompetitor = (data) => {
     scoreList.appendChild(contestant);
   });
 };
-const submitScore = (e) => {
+const submitScore = async (e) => {
   e.preventDefault();
   const updatePosition = new Updateposition(namevalue.value, score.value);
-  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/austin/scores/', {
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/austin/scores/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(updatePosition),
-  })
-    .then((response) => {
-      Form.addEventListener('submit', (event) => {
-        // Prevent the default form submission behavior
-        event.preventDefault();
+  });
 
-        // Check if the form is valid
-        if (!response.ok) {
-          // If the form is not valid, display an error message
-          displayError('Leaderboard score was not created correctly');
-        } else {
-          // If the form is valid, submit it
-          Form.reset();
-        }
-      });
-    });
+  if (!response.ok) {
+    throw new Error('Leaderboard score was not created correctly');
+  }
+
+  Form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    Form.reset();
+  });
   Form.reset();
 };
 const displayScore = async () => {
